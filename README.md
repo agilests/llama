@@ -12,8 +12,6 @@ pip3 -V
 pip 23.0.1 from /Users/david/Library/Python/3.9/lib/python/site-packages/pip (python 3.9)
 ```
 
-
-
 #### step1 download LLaMA models:
 
 total space: 264G
@@ -88,6 +86,35 @@ python setup.py install
 
 
 
+### Study:
 
+The following is from: https://github.com/nomic-ai/gpt4all
+
+you can clone and run it om Mac M1
+
+```shell
+# download the gpt4all models
+https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml
+# clone gpt4all
+git clone https://github.com/nomic-ai/gpt4all.git
+cd gpt4all/chat
+mv ../../GPT4All-7B-4bit-ggml/gpt4all-lora-quantized.bin .
+./gpt4all-lora-quantized-OSX-m1
+# enjoy it
+```
+
+
+
+What's the ggml?
+
+> The Genetic Global Modeling Language (GGML) is a language that can be used to describe and share models, algorithms, experiments or any other computational artifact. It was developed by Google Brain team as an alternative for sharing their research results with others in order to make it easier to reproduce the work done on deep learning projects. GGML allows users to define different components of a model like layers, activation functions, optimizers and hyperparameters that can be shared across multiple models or even other languages such as Python
+
+What's the GGJT?
+
+> The Genetic Algorithm for Joint Training (or simply, Generic Global Optimization) is a methodology that can be used in conjunction with machine learning to improve performance on tasks where there are no labeled data available. It works by optimizing hyperparameters of the model and then using those optimized values as initialization parameters when training from scratch or fine-tuning an already existing network architecture, which allows for better generalization capabilities than starting directly at random weights (which is what happens in most cases)
+
+Why do I need to convert LLaMA model files convert to GGJT-compatible files ?
+
+> The reason for converting LLAM models into GGJT compatible format is because it allows them to be used in a wider range of applications. The GGJT format can handle more complex and larger datasets than the LLaMA model, which makes it an ideal choice when working with large-scale data sets that require greater computational power or memory resources for processing
 
 
