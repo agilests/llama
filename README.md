@@ -61,7 +61,7 @@ wget https://agi.gpt4.org/llama/LLaMA/65B/checklist.chk -O ./65B/checklist.chk
 git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
 # 1. if yuu already installed this libs, ignore this
-python3 -m pip install torch numpy sentencepiece
+pip3 install torch numpy sentencepiece
 # 2. convert the 7B model to ggml FP16 format
 # after this, output {llama_home}/13B/ggml-model-f16.bin
 python3 convert-pth-to-ggml.py {llama_home}/13B/ 1
@@ -74,7 +74,17 @@ python3 convert-pth-to-ggml.py {llama_home}/13B/ 1
 
 #### Chinese support
 
-see [GitHub - ymcui/Chinese-LLaMA-Alpaca: 中文LLaMA&amp;Alpaca大语言模型+本地部署 (Chinese LLaMA &amp; Alpaca LLMs)](https://github.com/ymcui/Chinese-LLaMA-Alpaca)
+1. #### source install hugging face transforms
+
+```
+# if you already installed transformers, uninstall first
+#
+git clone https://github.com/huggingface/transformers.git
+cd tramsformers
+python setup.py install
+```
+
+2. see [GitHub - ymcui/Chinese-LLaMA-Alpaca: 中文LLaMA&amp;Alpaca大语言模型+本地部署 (Chinese LLaMA &amp; Alpaca LLMs)](https://github.com/ymcui/Chinese-LLaMA-Alpaca)
 
 
 
