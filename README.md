@@ -90,7 +90,7 @@ python setup.py install
 
 The following is from: https://github.com/nomic-ai/gpt4all
 
-you can clone and run it om Mac M1
+you can get and run it on Mac M1
 
 ```shell
 # download the gpt4all models
