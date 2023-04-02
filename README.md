@@ -94,9 +94,11 @@ you can get and run it on Mac M1
 
 ```shell
 # download the gpt4all models
-https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml
+git lfs install # if already installed ignore this
+git clone https://huggingface.co/Sosaka/GPT4All-7B-4bit-ggml
 # clone gpt4all
 git clone https://github.com/nomic-ai/gpt4all.git
+# run
 cd gpt4all/chat
 mv ../../GPT4All-7B-4bit-ggml/gpt4all-lora-quantized.bin .
 ./gpt4all-lora-quantized-OSX-m1
